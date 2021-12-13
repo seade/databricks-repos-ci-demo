@@ -3,7 +3,7 @@
         "jobs": [
             {
                 "name": "nutter-testing-suite",
-                "new_cluster": {
+                "_comment_new_cluster": {
                     "spark_version": "9.1.x-scala2.12",
                     "node_type_id": "i3.xlarge",
                     "aws_attributes": {
@@ -15,6 +15,7 @@
                 "libraries": [],
                 "max_concurrent_runs": 1,
                 "max_retries": 0,
+                "existing_cluster_id": "0730-173143-ores78",
                 "notebook_task": {
                     "notebook_path": "/Repos/scott.eade@databricks.com/stage-repos-ci-demo/notebooks/tests/test-suite"
                 }
