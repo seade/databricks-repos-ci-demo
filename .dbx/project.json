@@ -2,7 +2,7 @@
     "environments": {
         "default": {
             "profile": "e2-demo-west",
-            "workspace_dir": "/Shared/scott.eade@databricks.com/projects/databricks-repos-ci-demo",
+            "workspace_dir": "/Users/scott.eade@databricks.com/databricks-repos-ci-demo",
             "artifact_location": "dbfs:/databricks-repos-ci-demo"
         }
     }
