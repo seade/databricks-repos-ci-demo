@@ -38,5 +38,5 @@ is_job = (
     .isDefined()
 )
 if is_job:
-    result.exit(dbutils)
-
+    #result.exit(dbutils)
+    dbutils.notebook.exit(result.test_results.passed())
