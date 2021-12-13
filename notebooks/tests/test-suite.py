@@ -19,6 +19,13 @@ class PrepareDataTestFixture(NutterFixture):
         first_row = counter.first()
         assert first_row[0] > 1
 
+    def assertion_test_name_fail(self):
+        counter = spark.sql(
+            "SELECT COUNT(*) AS total FROM delta.`dbfs:/databricks-repos-ci-demo/data/boston_nope`"
+        )
+        first_row = counter.first()
+        assert first_row[0] > 1
+
 
 result = PrepareDataTestFixture().execute_tests()
 print(result.to_string())
